@@ -1,0 +1,114 @@
+ion-content {
+    --padding-top: 10px;
+}
+
+.outer-container{
+    padding: 25px;
+    padding-top: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    .top-part{
+        display: flex;
+        justify-content: center;
+    }
+
+    .lower-part{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        width: 100%
+
+        
+    }
+    
+    
+}
+
+.btn{
+    width: 37%;
+    height: 3.4rem;
+    border-radius: 13px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    width: 320px;
+    font-size: 23px;
+    height: 3.5rem;
+    margin: 20px;
+}
+
+
+#sign-up, #signup-google{
+    color: white;
+    background-color: var(--ion-color-primary);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider{
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    column-gap: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    hr{
+        border-top: 1px solid black;
+        width: 100%;
+    }
+}
+
+
+h1{
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+h4{ 
+    text-align: center; 
+    font-size: 23px;
+}
+ion-label {
+    font-weight: bold;
+    font-size: 18px;
+}
+ion-input{
+    background: white;
+    border: 2px solid #b1b1b18a;
+    color: #6e6e6e;
+    width: 400px;
+    height: 77px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+ion-icon {
+    font-size: 25px;
+    margin: 13px;
+}
+
+@media(prefers-color-scheme: dark) {
+    #line-1, #line-2{
+        border-top: 1px solid var(--ion-text-color);
+        width: 100%;
+    }
+}

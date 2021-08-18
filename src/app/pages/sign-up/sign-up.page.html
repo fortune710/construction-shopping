@@ -1,0 +1,50 @@
+<ion-content>
+  <ion-button color="transparent" style="--box-shadow:0;" routerLink="/welcome">
+    <ion-icon name="arrow-back-outline" slot="start"  size="large" id="btn-back">
+    </ion-icon>
+  </ion-button>  
+
+  <div class="outer-container">
+    <h1>New User</h1>
+    <ion-label>Let's create an account for you</ion-label>
+
+    <div class="container">
+      <div class="top-part">
+        <form class="flex">
+          <ion-input type="text" placeholder="Name">
+            <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+          </ion-input>
+
+         <ion-input type="email" placeholder="Email">
+            <ion-icon name="mail-outline" slot="start"></ion-icon>
+          </ion-input>
+          
+          <ion-input type="password" placeholder="Password">
+            <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+          </ion-input>
+
+          <div class="btn" id="sign-up" routerLink="sign-up">Sign Up</div>
+
+          
+        </form>
+        
+      </div>
+      <div class="lower-part">
+        <div class="divider">
+          <div> <hr id="line-1"> </div>
+          <div style="text-align:center">or</div>
+          <div> <hr id="line-2"> </div>
+        </div>
+
+        <div class="btn-google" id="signup-google">
+          <ion-icon name="logo-google" slot="start"></ion-icon>
+          Continue with Google
+        </div>
+      
+        <h4>Aleady have an account?<span><a routerLink="../login">Sign in</a></span></h4>
+      </div>
+    </div>
+  </div>
+  
+    
+</ion-content>

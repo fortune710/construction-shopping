@@ -1,0 +1,36 @@
+<ion-content>
+  <ion-toolbar slot="fixed">
+    <ion-title style="text-align:center">Categories</ion-title>
+  </ion-toolbar>
+  <div class="content">
+  
+    <div class="cards">
+  
+      <ion-grid>
+        <ion-row *ngIf="largeScreen==false">
+          
+          <ion-card *ngFor="let category of categories; let i=index" [id]="'card-'+i">
+            <ion-img [src]="category.src" [id]="'img-'+i"></ion-img>
+            <ion-label>
+              {{category.name}}
+            </ion-label>
+          </ion-card>
+        </ion-row>
+
+        <ion-row *ngIf="largeScreen==true" class="large-screen">
+          <ion-card *ngFor="let category of categories; let i=index" [id]="'card-'+i">
+            <ion-img [src]="category.src" [id]="'img-'+i"></ion-img>
+            <ion-label>
+              {{category.name}}
+            </ion-label>
+          </ion-card>
+          
+        </ion-row>
+      </ion-grid>
+      
+    </div>
+          
+  
+    
+  </div>
+</ion-content>

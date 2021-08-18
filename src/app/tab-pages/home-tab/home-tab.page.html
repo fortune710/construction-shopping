@@ -1,0 +1,48 @@
+<ion-content>
+  <ion-searchbar type="search"></ion-searchbar>
+  <h1 style="font-weight:normal;">{{greeting}}</h1>
+
+  <div class="slider-container">
+    
+    <ion-slides #slides [options]="slideOpts" (ionSlideNextStart)="returnActiveSlide()">
+      <ion-slide *ngFor="let img of slideImgs">
+        <ion-card class="card-slider">
+          <ion-img [src]="img" class="img-slider"></ion-img>
+        </ion-card>      
+      </ion-slide>
+    </ion-slides>
+    <div class="flex">
+      <div class="indicator" [style.background-color]="activeSlideIndex==2?'var(--ion-color-primary)':'black'"></div>
+      <div class="indicator" [style.background-color]="activeSlideIndex==1?'var(--ion-color-primary)':'black'"></div>
+      <div class="indicator" [style.background-color]="activeSlideIndex==0?'var(--ion-color-primary)':'black'"></div>
+    </div>
+  
+  </div>  
+
+
+  <div class="content">
+
+    <div class="featured-sellers">
+      <h1 style="padding-left:0;">Featured Sellers</h1>
+      <div class="btn-see-all">SEE ALL</div>
+    </div><hr>
+    <div class="cards">
+      <ion-card *ngFor="let card of cards" class="card-featured">
+        <ion-card-header>
+          <ion-img [src]="card.src" class="img-featured"></ion-img>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-label>{{card.name}}</ion-label>
+          <div class="feed-content">
+            <ion-icon name="people-outline" slot="end"></ion-icon>
+            <ion-label>{{card.feed}}</ion-label>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+  </div>
+
+
+</ion-content>
+

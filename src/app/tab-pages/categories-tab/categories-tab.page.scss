@@ -1,0 +1,79 @@
+h1{ font-size: 30px; }
+.content{
+    margin-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+ion-list{
+    background: rgba(255, 255, 255, 0.342);
+}
+ion-card{
+    width: 100%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    //margin-top: -150px;
+}
+ion-img{
+    padding-bottom: 150px;
+    mask-image: linear-gradient(to top, transparent 60%, #707070);
+}
+ion-grid{
+    ion-row{
+        height: 500px;
+    }
+}
+#card-0{
+    margin-top: 0;
+}
+#img-0{ mask-image: linear-gradient(to top, transparent 53%, #707070);}
+#img-1{ 
+    mask-image: linear-gradient(to top, transparent 45%, #707070);
+    transform: translateY(-150px);
+}
+#img-2{ 
+    mask-image: linear-gradient(to top, transparent 40%, #707070);
+    transform: translateY(-70px);
+}
+#img-3{ 
+    mask-image: linear-gradient(to top, transparent 38%, #707070);
+    transform: translateY(-150px);
+}
+#img-4{ mask-image: linear-gradient(to top, transparent 36%, #707070);}
+#img-5{ 
+    mask-image: linear-gradient(to top, transparent 33%, #707070);
+    transform: translateY(-100px);
+}
+
+.large-screen{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+ion-label{
+    font-size: 25px;
+    --font-weight: bold;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 500px){
+    .cards{
+      //  display: grid;
+
+    }
+    
+}
+
+@media screen and (min-width:600px) {
+    ion-row{
+        //display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+}

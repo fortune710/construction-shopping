@@ -24,3 +24,91 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+@font-face {
+    font-family: 'WorkSans';
+    font-weight: normal;
+    src: url('assets/fonts/WorkSans/static/WorkSans-Regular.ttf');
+
+    @font-face {
+        font-family: 'WorkSans';
+        font-weight: bolder;
+        src: url('assets/fonts/WorkSans/static/WorkSans-Bold.ttf');
+    }
+
+    @font-face {
+        font-family: 'WorkSans';
+        font-weight: bold;
+        src: url('assets/fonts/WorkSans/static/WorkSans-SemiBold.ttf');
+    }
+
+    @font-face {
+        font-family: 'WorkSans';
+        font-weight: medium;
+        src: url('assets/fonts/WorkSans/static/WorkSans-Medium.ttf');
+    }
+
+    @font-face {
+        font-family: 'WorkSans';
+        font-weight: lighter;
+        src: url('assets/fonts/WorkSans/static/WorkSans-Light.ttf')
+
+    }
+}
+
+/* Styles for the general app view */
+ion-content{
+    --padding-top: 10px;
+    //--background: var(--ion-color-light-contrast);
+    --color: var(--ion-text-color);
+    font-family: 'WorkSans';
+}
+
+ion-list{
+    padding: 0;
+}
+
+h1{
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+ion-list{
+    --background: white;
+    padding: 0;
+    
+    ion-list-header{
+        --background: white;
+        --color:black;
+        font-weight: bolder;
+        font-size: 35px;
+    }
+    ion-icon{
+        color: #59595E;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    ion-item{
+        --background: white;
+        color: #59595E;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+.content{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+    ion-toolbar{
+        --background: #171717;
+    }
+
+    #btn-back{ 
+        color: var(--ion-text-color);
+    }
+}

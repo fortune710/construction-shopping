@@ -1,0 +1,125 @@
+h1, h3{  
+    margin: 0px;
+    padding-left: 10px;
+}
+p{
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 13px;
+}
+ion-searchbar{
+    --background: #E0E0E0;
+    --color: #18181a;
+    --border-radius: 10px;
+}
+.featured-sellers{
+    display: grid;
+    grid-template-columns: auto 18%;
+}
+.btn-see-all{
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: var(--ion-color-primary);
+    width: 90%;
+    height: 1.6rem;
+    font-size: 13px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+.btn-see-all:click{ background: #d1d1d1}
+.card-slider{
+    width: 90%;
+    height: 190px;
+    box-shadow: 0;
+    border-radius: 10px;
+
+    .img-slider{
+        object-fit: cover;
+    }
+}
+.flex{
+    height: 5%;
+    width: 150px;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+.indicator{
+    border-radius: 50%;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+}
+
+span{ display: flex; }
+hr{
+    border-top: 1px solid #707070;
+    margin: 0;
+    justify-content: center;
+    width: 97%;
+}
+
+ion-icon{
+    font-size:20px;
+}
+
+.slider-container{
+    margin-top: 1.25em;
+    margin-bottom: 2rem;
+}
+.cards{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.feed-content{
+    display: inline-flex;
+    margin-left: auto;
+    gap: 3px;
+}
+.card-featured{
+    --background: rgb(252, 252, 252);
+    --drop-shadow: 3px;
+    --color: black;
+    .img-featured{ height: 89.5px; width: 179px; }
+    ion-card-header{
+        padding: 10px 10px 10px 10px;
+        ion-img{ width: 100%; }
+    }
+    ion-card-content{
+        display: flex;
+        align-items: center;
+        height: 35px;
+        //column-gap: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        ion-label{
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .card-featured{
+        --background: #232525;
+        --drop-shadow: 3px;
+        --color: var(--ion-text-color);
+        border: 0.5px solid #383838;
+    }
+
+    ion-searchbar{
+        --box-shadow: 1px;
+        --background: #333333;
+        --icon-color: #111111;
+        --placeholder-color: #000000;
+        --cancel-button-color: #111111;
+        --placeholder-font-weight: regular;
+        --color: #000000;
+    }
+    
+}

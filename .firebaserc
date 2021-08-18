@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "construction-database": {
+      "hosting": {
+        "app": [
+          "construction-database"
+        ]
+      }
+    }
+  }
+}

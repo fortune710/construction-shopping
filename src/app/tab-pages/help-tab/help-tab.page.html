@@ -1,0 +1,31 @@
+<ion-content>
+  <div class="content">
+    <div class="first-header">
+      <h1>Need Help?</h1>
+      <hr>
+    </div>
+
+    <div class="btn btn-report">
+      <ion-icon name="warning" slot="start"></ion-icon>
+      Report an Issue
+    </div>
+
+    <ion-list class="first-list">
+      <ion-item *ngFor="let item of listItems">
+        <ion-icon [name]="item.icon" slot="start"></ion-icon>
+        <ion-label>{{item.name}}</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <div class="second-header">
+      <h1>Still Stuck?</h1>
+      <h4>Reach out to an agent</h4>
+      <hr>
+    </div>
+
+    <div class="btn" [id]="item.id" *ngFor="let item of buttons">
+      <ion-icon [name]="item.icon" slot="start"></ion-icon>
+      {{item.name}}
+    </div>
+  </div>
+</ion-content>
